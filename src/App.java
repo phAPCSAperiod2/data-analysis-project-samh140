@@ -52,6 +52,7 @@ public class App {
             {
                 System.out.println("Invalid input. Please enter 1, 2, 3, or 4.");
             }
+            
         }
         scanner.close();
     }
