@@ -1,5 +1,13 @@
 /**
- * Represents one row from your dataset.
+ * Data holder representing a single state record from the CSV dataset.
+ *
+ * <p>This class encapsulates properties that are used by the analysis
+ * code in {@link App}.  Attributes include the name of the state,
+ * percentage of residents without health insurance, total firearm
+ * deaths, and drug overdose death rate per 100k population.</p>
+ *
+ * @author Sam H
+ * @collaborator CoPilot
  *
  * TODO:
  *  - Rename the class to match your dataset (e.g., Pokemon, StateData, CountryStat)
@@ -26,6 +34,14 @@ public class StateData {
     
     // each state is a population
     // TODO: Create a constructor that takes all attributes as parameters
+    /**
+     * Constructs a new StateData instance with the given values.
+     *
+     * @param state name of the state
+     * @param nonInsuredPercentage percentage of residents without insurance
+     * @param totalFireArmDeaths total number of firearm deaths
+     * @param drugOverdoseDeathRate overdose death rate per 100k population
+     */
     public StateData(String state, double nonInsuredPercentage, int totalFireArmDeaths, double drugOverdoseDeathRate) {
         this.state = state;
         this.nonInsuredPercentage = nonInsuredPercentage;
@@ -35,18 +51,38 @@ public class StateData {
 
 
     // TODO: Add getters for attributes you need
+    /**
+     * Returns the state's name.
+     *
+     * @return state name
+     */
     public String getState() {
         return state;
     }
 
+    /**
+     * Returns the percentage of residents without health insurance.
+     *
+     * @return non-insured percentage
+     */
     public double getNonInsuredPercentage() {
         return nonInsuredPercentage;
     }
 
+    /**
+     * Returns the total firearm deaths recorded for the state.
+     *
+     * @return firearm death count
+     */
     public int getTotalFireArmDeaths() {
         return totalFireArmDeaths;
     }
 
+    /**
+     * Returns the drug overdose death rate per 100k population.
+     *
+     * @return overdose death rate
+     */
     public double getDrugOverdoseDeathRate() {
         return drugOverdoseDeathRate;
     }

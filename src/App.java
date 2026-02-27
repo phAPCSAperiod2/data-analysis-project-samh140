@@ -5,6 +5,15 @@ import java.util.Scanner;
 /**
  * Main application for the Data Analysis Mini‑Project.
  *
+ * <p>This class contains the entry point for running a simple
+ * analysis over state-level health and safety statistics. It
+ * includes helpers to load the CSV dataset and perform several
+ * example queries such as finding max firearm deaths and filtering
+ * by overdose death rate.</p>
+ *
+ * @author Sam H
+ * @collaborator CoPilot
+ *
  * TODO:
  *  - Update the path to your dataset file
  *  - Read the CSV file using Scanner
@@ -57,6 +66,15 @@ public class App {
         scanner.close();
     }
 
+    /**
+     * Reads the dataset from a CSV file and constructs an array of
+     * {@link StateData} objects. Assumes the first line is a header and
+     * that there are at most 50 records (one per US state).
+     *
+     * @param fileName the path to the CSV file
+     * @return an array containing data objects parsed from the file
+     * @throws IOException if the file cannot be opened
+     */
     public static StateData[] readFile(String fileName) throws IOException {
         int index = 0;
         File file = new File(fileName);
@@ -76,6 +94,13 @@ public class App {
         return dataList;
     }
 
+    /**
+     * Prints the state that has the maximum number of firearm deaths from
+     * the supplied dataset. Also outputs a simple comment based on the
+     * magnitude of the death toll.
+     *
+     * @param dataList array of state data; null elements are ignored
+     */
     public static void maxFireArmDeaths(StateData[] dataList) {
         int maxDeaths = 0;
         String stateWithMaxDeaths = "";
@@ -96,6 +121,13 @@ public class App {
 
     }
 
+    /**
+     * Finds and prints the state with the lowest percentage of
+     * non‑insured residents. Provides a commentary on the result range
+     * (low, moderate, high).
+     *
+     * @param dataList dataset to search, may contain null entries
+     */
     public static void minPercentageNonInsured(StateData[] dataList){
         double minPercentage = Double.MAX_VALUE; // initialize to a very high value so any percentage will be lower
         String stateWithMinPercentage = "";
@@ -118,6 +150,14 @@ public class App {
         }
     }
 
+    /**
+     * Lists states whose drug overdose death rate exceeds the given
+     * threshold and prints them. If none are found, a message is shown
+     * accordingly.
+     *
+     * @param dataList the dataset to inspect
+     * @param number the threshold rate (per 100k population)
+     */
     public static void drugOverdoseDeathRateAbove(StateData[] dataList, double number) {
         String[] statesAboveNumber = new String[dataList.length];
         for (int i = 0; i < dataList.length; i++) {

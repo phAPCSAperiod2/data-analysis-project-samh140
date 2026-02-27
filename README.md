@@ -71,7 +71,7 @@ Resource link: https://runestone.academy/ns/books/published/csawesome2/external/
 
 **What this dataset contains (2–3 sentences):**  
 The dataset contains information on each state in the United States in 2016.
-Primarily, it collects data on firearm deaths, drug overdose deaths,
+It primarily collects data on firearm deaths, drug overdose deaths,
 and the percentage of the uninsured.
 
 ---
@@ -81,9 +81,9 @@ and the percentage of the uninsured.
 Your guiding question should be something you can answer using your dataset.
 
 **My guiding question:**
-What state has the greatest number of deaths from firearms?
+What state has the greatest number of deaths due to firearms?
 What state has the lowest percentage of people without health insurance?
-Which states have a death-to-drug-overdose rate greater than 25 in the United States?
+Which states have a death-to-drug-overdose rate greater than 35 in the United States?
 
 
 Examples:
@@ -170,13 +170,19 @@ After analyzing your objects, print:
 - ✔ A clear answer to your guiding question  
 
 **My findings:**  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
+There was a total of 52 rows.
+Some states do not have data. States without data
+had the value of -1 in their place.
 
-**My answer to the guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
+**My answer to the guiding question:** 
+From my analysis of the data set, I discovered that Texas had the greatest
+number of deaths due to gun violence. 3353 people were recorded to have died
+because of firearms in 2016, showing how gun violence should be a major concern.
+I also discovered that Massachusetts has the lowest percentage of people who are 
+non-insured at 2.6%. From this, I can assume Massachusetts provides good insurance.
+Finally, I discovered that the 5 different states in the United States have a drug
+overdose death rate above 35 per 100,000 population. This is very, very concerning. I
+did not realize how severe the situation was until I answered this question.
 
 ---
 
@@ -223,10 +229,17 @@ Write a short reflection (3–5 sentences):
 - How trustworthy are your insights?
 
 **My reflection:**  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
+A data-quality issue that I found is that some rows may be
+missing information or not have information at all, which can become
+a hinderance. For example, the state Puerto Rico did not have any recorded data
+for several areas of the data set and was replaced by the value "-1". This
+could lead to problems in the future. I do not believe my dataset can be
+biased because they came from official and reliable sources such as the CDC.
+In complete or inaccurate data can lead to unreliable results that may
+pose a problem, like in this situation deaths to firearms, as insignificant
+or not of concern. I believe my insights on how concern people should be about
+gun violence, drug overdoses, and insurance is reasonable but not perfect as I
+don't have statistics that differentiate what values are significant and what is not.
 
 ---
 
