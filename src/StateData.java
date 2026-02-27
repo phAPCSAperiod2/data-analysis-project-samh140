@@ -90,6 +90,14 @@ public class StateData {
     // TODO: Add other data analysis methods
 
     // TODO: Override toString() to return a readable representation of your object
+    /**
+     * Returns a string representation of the StateData object.
+     *
+     * <p>The string includes all attributes: state name, non-insured percentage,
+     * total firearm deaths, and drug overdose death rate.</p>
+     *
+     * @return a formatted string containing all state data attributes
+     */
     @Override
     public String toString() {
         return "StateData{" +
