@@ -66,12 +66,13 @@ UML_Diagram.png (or UML_Diagram.pdf)
 
 ## 🧩 Step 1 — Choose Your Dataset
 
-**Dataset Name:**  
-**Source / Link:**  
+Dataset name: StateData2020-CDC-Census
+Resource link: https://runestone.academy/ns/books/published/csawesome2/external/_static/datasets/StateData2020-CDC-Census.csv
 
 **What this dataset contains (2–3 sentences):**  
-____________________________________________________________________  
-____________________________________________________________________  
+The dataset contains information on each state in the United States in 2016.
+Primarily, it collects data on firearm deaths, drug overdose deaths,
+and the percentage of the uninsured.
 
 ---
 
@@ -79,9 +80,11 @@ ____________________________________________________________________
 
 Your guiding question should be something you can answer using your dataset.
 
-**My guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
+**My guiding question:**
+What state has the greatest number of deaths from firearms?
+What state has the lowest percentage of people without health insurance?
+Which states have a death-to-drug-overdose rate greater than 25 in the United States?
+
 
 Examples:
 
@@ -126,9 +129,10 @@ In `Main.java`, you must:
 
 | Attribute Name | CSV Column Name | Column Index # | Notes |
 |----------------|------------------|----------------|-------|
-|                |                  |                |       |
-|                |                  |                |       |
-|                |                  |                |       |
+|      state     |         STATE    |        0       | String |
+| nonInsuredpercentage| Non-insured percentage |   2  | double |
+|totalFirearmDeaths| Firearm Deaths totals in 2016 | 4  | int |
+|drugOverdoseDeathRate|Drug Overdose death rates per 100k population 2016|5 |double|
 
 ---
 
@@ -145,8 +149,9 @@ You must write **at least two algorithms** to analyze your dataset.
 
 **Algorithms I will implement:**
 
-1. __________________________________________  
-2. __________________________________________  
+1. Compare the drug overdose death rate in each state with the value 25. Count how many states have a rate greater than 25.
+2. Get the minimum percentage of non-insured in which state.
+3. Get the maximum total of deaths by firearms, and which state.
 
 Optional extras:  
 - Sorting  
