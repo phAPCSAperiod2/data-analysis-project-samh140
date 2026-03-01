@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+  <diagram name="Page-1" id="30uGv2GGsCaNdxt5oMfp">
+    <mxGraphModel dx="1426" dy="1851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zIfmvt7a2INosXk_2yeS-5" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="560" width="290" x="40" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-2" parent="zIfmvt7a2INosXk_2yeS-5" style="rounded=0;whiteSpace=wrap;html=1;" value="App" vertex="1">
+          <mxGeometry height="50" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-3" parent="zIfmvt7a2INosXk_2yeS-5" style="rounded=0;whiteSpace=wrap;html=1;" value="- fileName: String" vertex="1">
+          <mxGeometry height="240" width="290" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-4" parent="zIfmvt7a2INosXk_2yeS-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Methods&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ readFile(String fileName): StateData[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ maxFireArmDeaths(StateData[] dataList): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ minPercentageNonInsured(StateData[] dataList): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ drugOverdoseDeathRateAbove(StateData[] dataList, double number): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ main(String[] args): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="290" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-6" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="560" width="290" x="430" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-7" parent="zIfmvt7a2INosXk_2yeS-6" style="rounded=0;whiteSpace=wrap;html=1;" value="StateData" vertex="1">
+          <mxGeometry height="50" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-8" parent="zIfmvt7a2INosXk_2yeS-6" style="rounded=0;whiteSpace=wrap;html=1;" value="- state: String&lt;div&gt;&lt;br&gt;&lt;div&gt;- nonInsuredpercentage: double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- totalFireArmDeaths: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- drugOverdoseDeathRate: double&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="290" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-9" parent="zIfmvt7a2INosXk_2yeS-6" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Methods&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ StateData(String state, double nonInsuredPercentage, int totalFireArmDeaths, double drugOverdoseDeathRate)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ getState(): String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getNonInsuredPercentage(): double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getTotalFireArmDeaths(): int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getDrugOverdosedDeathRate(): double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="290" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-11" edge="1" parent="1" source="zIfmvt7a2INosXk_2yeS-4" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="zIfmvt7a2INosXk_2yeS-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="270" as="sourcePoint" />
+            <mxPoint x="280" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zIfmvt7a2INosXk_2yeS-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;gradientColor=none;" value="Uses" vertex="1">
+          <mxGeometry height="30" width="90" x="335" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
