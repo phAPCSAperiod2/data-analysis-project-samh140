@@ -234,14 +234,14 @@ Write a short reflection (3–5 sentences):
 **My reflection:**  
 A data-quality issue that I found is that some rows may be
 missing information or not have information at all, which can become
-a hinderance. For example, the state Puerto Rico did not have any recorded data
+a hindrance. For example, the state of Puerto Rico did not have any recorded data
 for several areas of the data set and was replaced by the value "-1". This
-could lead to problems in the future. I do not believe my dataset can be
-biased because they came from official and reliable sources such as the CDC.
-In complete or inaccurate data can lead to unreliable results that may
-pose a problem, like in this situation deaths to firearms, as insignificant
-or not of concern. I believe my insights on how concern people should be about
-gun violence, drug overdoses, and insurance is reasonable but not perfect as I
+could lead to problems in the future. Though my dataset came from official sources, my data
+may still be susceptible to bias or misinput of data. Incomplete
+or inaccurate data can lead to unreliable results that may
+pose a problem, like in this situation, deaths by firearms, which are insignificant
+or not of concern. I believe my insights on how concerned people should be about
+gun violence, drug overdoses, and insurance are reasonable but not perfect, as I
 don't have statistics that differentiate what values are significant and what is not.
 
 ---
