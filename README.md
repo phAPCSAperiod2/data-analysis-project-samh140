@@ -218,6 +218,9 @@ Add a UML diagram showing:
 
 Save as `UML_Diagram.png` or `.pdf` in the repo.
 
+<img width="719" height="598" alt="image" src="https://github.com/user-attachments/assets/05720eb5-6319-4f1e-988b-4ffd62f27115" />
+
+
 ---
 
 ## 🛡 Step 8 — Data Ethics & Quality Reflection
