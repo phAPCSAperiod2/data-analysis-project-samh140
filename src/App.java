@@ -159,13 +159,15 @@ public class App {
      * @param number the threshold rate (per 100k population)
      */
     public static void drugOverdoseDeathRateAbove(StateData[] dataList, double number) {
+        int count = 0;
         String[] statesAboveNumber = new String[dataList.length];
         for (int i = 0; i < dataList.length; i++) {
             if (dataList[i] != null && dataList[i].getDrugOverdoseDeathRate() > number) {
                 statesAboveNumber[i] = dataList[i].getState();
+                count++;
             }
         }
-        if (statesAboveNumber.length == 0){
+        if (count == 0){
             System.out.println("No states have a drug overdose death rate above " + number + " (per 100k population).");
         }
         else {
